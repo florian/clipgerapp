@@ -9,6 +9,8 @@
   box-sizing: border-box;
 }
 header {
+  height: 700px;
+  overflow: hidden;
   padding-top: 50px;
   border-top: 10px solid rgba(0,0,0,0.3);
   border-bottom: 1px solid rgba(0,0,0,0.3);
