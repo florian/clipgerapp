@@ -14,22 +14,23 @@ header {
   overflow: hidden;
   padding-top: 50px;
   border-top: 10px solid rgba(0,0,0,0.3);
-  border-bottom: 1px solid rgba(0,0,0,0.3);
   text-align: center;
   background-color: #1188e6;
   color: #fff;
   text-shadow: 1px 1px rgba(0,0,0,0.3);
 }
-.header-container {
+header .container {
   width: 800px;
-  margin: 0 auto;
 }
-.header-container h1 {
+header h1 {
   padding: 10px;
   font-size: 55px;
   font-weight: 500;
 }
-.header-container h2 {
+header h1 span {
+  font-weight: 700;
+}
+header h2 {
   padding: 5px;
   font-size: 23px;
   font-weight: 500;
@@ -67,7 +68,7 @@ header {
   box-shadow: inset 0 0 12px rgba(0,0,0,0.5);
 }
 .appstore .container {
-  width: 500px;
+  width: 480px;
 }
 .appstore span {
   position: relative;
