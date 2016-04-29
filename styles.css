@@ -28,7 +28,7 @@ header h1 {
   font-weight: 500;
 }
 header h1 span {
-  font-weight: 700;
+  font-weight: 500;
 }
 header h2 {
   padding: 5px;
@@ -114,7 +114,20 @@ ul {
   padding-top: 50px;
   line-height: 2;
 }
+.overview .long-overview-item .description {
+  padding-top: 20px;
+}
 .overview p {
   padding-top: 10px;
   opacity: 0.85;
+}
+kbd {
+  background-color: #dadada;
+  padding: 2px 10px;
+  border-radius: 7px;
+  border: 1px solid #545454;
+  border-bottom-width: 4px;
+  font-size: 13px;
+  position: relative;
+  top: -2px;
 }
