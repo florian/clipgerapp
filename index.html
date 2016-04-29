@@ -9,7 +9,10 @@
 	<body>
 		<header>
 			<div class="container">
-				<h1>clip<span>ger</span></h1>
+				<h1>
+					<span class="clip">clip</span><span class="ger">ger</span>
+				</h1>
+
 				<h2>Clipger is a clipboard manager for Mac OS X. It backups your
 					entire clipboard history and makes it easily searchable.</h2>
 				<h2>It features intelligent previews and has useful features
@@ -30,13 +33,6 @@
 				<img src="imgs/mas-download.svg" />
 			</div>
 		</div>
-
-		<!-- <div> -->
-		<!-- 	<div class="container"> -->
-		<!-- 		<h2>The problem</h2> -->
-        <!--  -->
-		<!-- 	</div> -->
-		<!-- </div> -->
 
 		<div class="overview">
 			<ul>
@@ -64,7 +60,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="long-overview-item">
+				<li class="very-long-overview-item">
 					<div class="container">
 						<img src="imgs/header-dark.png" width="500" />
 						<div class="description">
@@ -72,14 +68,16 @@
 							<p>Privacy options were a central design aspect of
 							clipger from the very beginning. By default clipger
 							won't save any information that was marked as
-							sensible by another application, password managers
+							confidential by another application, password managers
 							like 1Password usually do this.</p>
 							<p>There's also a private mode where clipger won't
 							record anything. It can also be enabled
-							for the next minute using a keyboard shortcut. Other
-							than that you can blacklist applications that
-							clipger should ignore and you can easily batch delete old
-							history or specific history entries.</p>
+							for the next minute using the keyboard shortcut
+							<kbd>ctrl</kbd> + <kbd>g</kbd>.</p>
+							<p>Other than that you can blacklist applications that
+							clipger should ignore, can easily batch delete old
+							history or specific history entries and configure
+							for how long clipger should save history in general.</p>
 						</div>
 					</div>
 				</li>
@@ -118,6 +116,109 @@
 					</div>
 				</li>
 			</ul>
+		</div>
+
+		<div class="features">
+			<div class="container">
+				<h3>Overview over all features</h3>
+
+				<ul>
+					<li>
+						<h4>Advanced search</h4>
+						<p>Clipger has a smart search field that doesn't expect
+						the words in your search query to be in the right order.
+						However there's also an advanced search mode that allows
+						you to filter by app and time frame</p>
+					</li>
+
+					<li>
+						<h4>Unlimited history</h4>
+						<p>Unlike other apps clipger let's you save history for
+						however long you want and as many history entries as you
+						want. By default this means that you're history size is
+						unlimited. There are also privacy options to set limits</p>
+					</li>
+
+					<li>
+						<h4>Have common information quickly accessible</h4>
+						<p>It's pretty annoying to type common information like
+						your E-Mail adress. With Clipger you can just search for
+						the first few characters and then let clipger paste it into the front app</p>
+					</li>
+
+					<li>
+						<h4>Append to clipboard</h4>
+						<p>Clipger gives you a keyboard shortcut to directly
+						append the selected text to the clipboard. You can even
+						configure with what characters to combine the current
+						clipboard and the appended text</p>
+					</li>
+
+					<li>
+						<h4>Paste into Front app</h4>
+						<p>When in clipger's main window you can press
+						<kbd>ctrl</kbd> + <kbd>enter</kbd> to paste the selected
+						history entry right into the front app. Press only
+						<kbd>enter</kbd> and clipger will just copy to the
+						clipboard</p>
+					</li>
+
+					<li>
+						<h4>Private mode</h4>
+						<p>Want Clipger to temporarely stop saving your
+						clipboard history? There's a private mode for just that.
+						Press <kbd>ctrl</kbd> + <kbd>g</kbd> to enable it just
+						for the next 60 seconds</p>
+					</li>
+
+					<li>
+						<h4>Ignores passwords</h4>
+						<p>By default Clipger will ignore all clipboard entries
+						that were marked as confidential by another application.
+						E.g. everything that 1Password writes into the clipboard
+						won't be saved by Clipger</p>
+					</li>
+
+					<li>
+						<h4>Manipulate the clipboard entry</h4>
+						<p>You can apply several filters before clipger will
+						copy or paste the selected history entry. For example
+						you can let clipger trim whitespace or make it
+						capitalize parts of the text</p>
+					</li>
+
+					<li>
+						<h4>Preserves text type</h4>
+						<p>Clipger has no problems dealing with different types
+						of text, like e.g. text with formating. If you let
+						clipger paste an old history entry it will preverse the
+						text type by default</p>
+					</li>
+
+					<li>
+						<h4>Configurable keyboard shortcuts</h4>
+						<p>Cliper offers a bunch of global keyboard shortcuts
+						but you can configure all of them however you'd like</p>
+					</li>
+
+					<li>
+						<h4>Paste Next/prev functions</h4>
+						<p>Inspired by Vim's YankRing plugin Clipger offers
+						global keyboard shortcut to paste the next or previous
+						item in your clipboard history. Want to paste something
+						you copied a while ago? Just press the "next" keyboard
+						shortcut several times</p>
+					</li>
+
+					<li>
+						<h4>Dark and light mode</h4>
+						<p>Clipger has a dark and a light mode, just like OS
+						X. You can also choose to always use the same mode as OS
+						X</p>
+					</li>
+
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>

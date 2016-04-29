@@ -1,3 +1,7 @@
+main-blue = #1188E6
+dark-blue = #2E4358
+light-blue = #D7EBFB
+
 *
 	margin: 0
 	padding: 0
@@ -16,7 +20,7 @@ header
 	border-top: 10px solid rgba(0,0,0,.3)
 	// border-bottom: 1px solid rgba(0,0,0,.3);
 	text-align: center;
-	background-color: #1188E6;
+	background-color: main-blue
 	color: white
 	text-shadow: 1px 1px rgba(0,0,0,.3)
 
@@ -63,7 +67,7 @@ header
 	height: 80px;
 	line-height: 80px;
 	font-size: 22px;
-	background-color: #D7EBFB
+	background-color: light-blue
 	padding: 10px
 	box-shadow: inset 0 0 12px rgba(0,0,0,.5)
 
@@ -85,11 +89,11 @@ ul
 
 .overview
 	li
-		background-color: #2E4358
+		background-color: dark-blue
 		color: white
 
 		&:nth-child(2n)
-			background-color: #D7EBFB
+			background-color: light-blue
 			color: black
 
 			img
@@ -97,6 +101,9 @@ ul
 
 			.description
 				float: left
+
+			kbd
+				border-color: #545454;
 
 		.container:after
 			content: ''
@@ -119,16 +126,52 @@ ul
 		.description
 			padding-top: 20px
 
+	.very-long-overview-item
+		.description
+			padding-top: 0
+
 	p
 		padding-top: 10px
 		opacity: .85
 
 kbd
 	background-color: #dadada;
+	color: black
 	padding: 2px 10px;
 	border-radius: 7px;
-	border: 1px solid #545454;
+	border: 1px solid black
 	border-bottom-width: 4px;
 	font-size: 13px;
 	position: relative;
 	top: -2px;
+
+.features
+	// background-color: #E1E8EF
+	background-color: main-blue
+	color: white
+	text-align: center;
+
+	h3
+		font-size: 35px;
+		padding: 50px;
+
+	li
+		display: inline-block;
+		width: 33%;
+		height: 250px;
+		box-sizing: border-box;
+		padding: 0 30px;
+		overflow: hidden;
+
+	h4
+		padding-bottom: 10px;
+		font-size: 16px;
+		font-weight: 700;
+
+	p
+		line-height: 2
+		// color: #2F2F2F;
+		opacity: .85
+
+	kbd
+		border-color: #545454;
