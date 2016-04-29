@@ -167,3 +167,32 @@ kbd {
 .features kbd {
   border-color: #545454;
 }
+.images {
+  background-color: #2e4358;
+  color: #fff;
+  text-align: center;
+}
+.images .container {
+  width: 1460px;
+}
+.images h3 {
+  font-size: 35px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.images p {
+  opacity: 0.85;
+  font-size: 16px;
+}
+.images li {
+  display: inline-block;
+  padding: 30px;
+}
+.images img {
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transition: box-shadow 0.5s ease-out;
+  cursor: pointer;
+}
+.images img:hover {
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
