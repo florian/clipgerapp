@@ -195,6 +195,11 @@ kbd {
 .features kbd {
   border-color: #545454;
 }
+.features .gallery-link {
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
 .images {
   background-color: #2e4358;
   color: #fff;

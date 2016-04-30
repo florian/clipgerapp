@@ -25,6 +25,11 @@ function initMagnificPopup () {
       }
     }
   })
+
+  $('.gallery-link').click(function () {
+    var index = Number($(this).attr('data-i')) || 0
+    $('.images').magnificPopup('open', index)
+  })
 }
 
 function initShowMoreImages () {
