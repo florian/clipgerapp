@@ -14,11 +14,8 @@ light-blue = #D7EBFB
 	box-sizing: border-box
 
 header
-	// height: 700px
-	// overflow: hidden
 	padding-top: 50px;
 	border-top: 10px solid rgba(0,0,0,.3)
-	// border-bottom: 1px solid rgba(0,0,0,.3);
 	text-align: center;
 	background-color: main-blue
 	color: white
@@ -27,6 +24,7 @@ header
 	.container
 		max-width: 800px;
 		width: 100%;
+		padding: 0 15px
 
 	h1
 		padding: 10px
@@ -43,24 +41,21 @@ header
 
 .img-overlay
 	position: relative
-	height: 410px
-	overflow: hidden
 	padding-top: 50px
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 100%;
 
 	img
-		position: absolute
-		z-index: 10
 		box-shadow: 0 0 50px rgba(0,0,0,.3);
 		-webkit-user-select: none
 
 	.left-header-img, .right-header-img
+		z-index: 10
+		position: absolute
+		bottom: 0
 		max-width: 600px
 		width: 50%
-		z-index: 1
-		top: 205px
 
 	.left-header-img
 		left: 0
@@ -69,10 +64,11 @@ header
 		right: 0
 
 	.center-header-img
+		z-index: 20
+		position: relative
+		top: 5px
 		max-width: 800px
 		width: 75%
-		left: 0
-		right: 0
 		margin: 0 auto
 
 .appstore

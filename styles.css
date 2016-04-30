@@ -20,6 +20,7 @@ header {
 header .container {
   max-width: 800px;
   width: 100%;
+  padding: 0 15px;
 }
 header h1 {
   padding: 10px;
@@ -36,25 +37,22 @@ header h2 {
 }
 .img-overlay {
   position: relative;
-  height: 410px;
-  overflow: hidden;
   padding-top: 50px;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
 .img-overlay img {
-  position: absolute;
-  z-index: 10;
   box-shadow: 0 0 50px rgba(0,0,0,0.3);
   -webkit-user-select: none;
 }
 .img-overlay .left-header-img,
 .img-overlay .right-header-img {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
   max-width: 600px;
   width: 50%;
-  z-index: 1;
-  top: 205px;
 }
 .img-overlay .left-header-img {
   left: 0;
@@ -63,10 +61,11 @@ header h2 {
   right: 0;
 }
 .img-overlay .center-header-img {
+  z-index: 20;
+  position: relative;
+  top: 5px;
   max-width: 800px;
   width: 75%;
-  left: 0;
-  right: 0;
   margin: 0 auto;
 }
 .appstore {
@@ -206,4 +205,12 @@ kbd {
 }
 .images img:hover {
   box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+@media (max-width: 550px) {
+  header {
+    padding-top: 0;
+  }
+  .img-overlay {
+    padding-top: 15px;
+  }
 }
