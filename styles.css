@@ -222,6 +222,10 @@ kbd {
   .overview .description {
     padding-top: 0;
   }
+  .features li {
+    width: 49%;
+    height: 220px;
+  }
 }
 @media (max-width: 950px) {
   .overview li .container img {
@@ -240,6 +244,21 @@ kbd {
   }
   .overview li .container .description h3 {
     text-align: center;
+  }
+}
+@media (max-width: 865px) {
+  .features li {
+    height: 270px;
+  }
+}
+@media (max-width: 700px) {
+  .features li {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .features li p {
+    text-align: left;
   }
 }
 @media (max-width: 550px) {
