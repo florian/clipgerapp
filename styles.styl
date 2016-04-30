@@ -187,7 +187,6 @@ kbd
 
 	p
 		line-height: 2
-		// color: #2F2F2F;
 		opacity: .85
 
 	kbd
@@ -200,6 +199,12 @@ kbd
 
 	.container
 		max-width: 1460px
+
+	ul
+		overflow: hidden
+
+		&.limited
+			height: 300px
 
 	h3
 		font-size: 35px;
@@ -219,7 +224,18 @@ kbd
 		transition: box-shadow .5s ease-out
 		cursor: pointer
 
-		&:hover
+		&:hover, &:active
 			box-shadow: 0 0 20px rgba(255, 255, 255, .5)
+
+	.show-all-images
+		display: none
+		padding-top: 20px;
+		padding-bottom: 50px;
+		cursor: pointer
+		opacity: .7
+		transition: opacity .5s linear
+
+		&:hover
+			opacity: 1
 
 @require './responsive.styl'

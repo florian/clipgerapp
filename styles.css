@@ -193,6 +193,12 @@ kbd {
 .images .container {
   max-width: 1460px;
 }
+.images ul {
+  overflow: hidden;
+}
+.images ul.limited {
+  height: 300px;
+}
 .images h3 {
   font-size: 35px;
   padding-top: 50px;
@@ -211,8 +217,25 @@ kbd {
   transition: box-shadow 0.5s ease-out;
   cursor: pointer;
 }
-.images img:hover {
+.images img:hover,
+.images img:active {
   box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+.images .show-all-images {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.5s linear;
+}
+.images .show-all-images:hover {
+  opacity: 1;
+}
+@media (max-width: 1088px) {
+  .images ul.limited {
+    height: 600px;
+  }
 }
 @media (max-width: 1070px) {
   .overview .container {
@@ -249,6 +272,11 @@ kbd {
 @media (max-width: 865px) {
   .features li {
     height: 270px;
+  }
+}
+@media (max-width: 724px) {
+  .images ul.limited {
+    height: 900px;
   }
 }
 @media (max-width: 700px) {
