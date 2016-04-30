@@ -1,0 +1,22 @@
+{
+  "name": "clipger-page",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Website for clipger",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florian/clipgerapp.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/florian/clipgerapp.com/issues"
+  },
+  "homepage": "https://github.com/florian/clipgerapp.com#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "stylus": "^0.54.5"
+  }
+}
