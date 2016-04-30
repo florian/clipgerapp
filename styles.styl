@@ -14,8 +14,8 @@ light-blue = #D7EBFB
 	box-sizing: border-box
 
 header
-	height: 700px
-	overflow: hidden
+	// height: 700px
+	// overflow: hidden
 	padding-top: 50px;
 	border-top: 10px solid rgba(0,0,0,.3)
 	// border-bottom: 1px solid rgba(0,0,0,.3);
@@ -25,7 +25,8 @@ header
 	text-shadow: 1px 1px rgba(0,0,0,.3)
 
 	.container
-		width: 800px;
+		max-width: 800px;
+		width: 100%;
 
 	h1
 		padding: 10px
@@ -42,25 +43,37 @@ header
 
 .img-overlay
 	position: relative
-	height: 675px
+	height: 410px
+	overflow: hidden
 	padding-top: 50px
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
 
 	img
 		position: absolute
-		left: 0
 		z-index: 10
 		box-shadow: 0 0 50px rgba(0,0,0,.3);
 		-webkit-user-select: none
 
-		&:first-child, &:last-child
-			z-index: 1
-			top: 205px
+	.left-header-img, .right-header-img
+		max-width: 600px
+		width: 50%
+		z-index: 1
+		top: 205px
 
-		&:first-child
-			left: -180px
+	.left-header-img
+		left: 0
 
-		&:last-child
-			left: 380px
+	.right-header-img
+		right: 0
+
+	.center-header-img
+		max-width: 800px
+		width: 75%
+		left: 0
+		right: 0
+		margin: 0 auto
 
 .appstore
 	margin: 0 auto;
@@ -204,3 +217,5 @@ kbd
 
 		&:hover
 			box-shadow: 0 0 20px rgba(255, 255, 255, .5)
+
+@require './responsive.styl'

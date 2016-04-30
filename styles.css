@@ -10,8 +10,6 @@
   box-sizing: border-box;
 }
 header {
-  height: 700px;
-  overflow: hidden;
   padding-top: 50px;
   border-top: 10px solid rgba(0,0,0,0.3);
   text-align: center;
@@ -20,7 +18,8 @@ header {
   text-shadow: 1px 1px rgba(0,0,0,0.3);
 }
 header .container {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
 }
 header h1 {
   padding: 10px;
@@ -37,26 +36,38 @@ header h2 {
 }
 .img-overlay {
   position: relative;
-  height: 675px;
+  height: 410px;
+  overflow: hidden;
   padding-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 .img-overlay img {
   position: absolute;
-  left: 0;
   z-index: 10;
   box-shadow: 0 0 50px rgba(0,0,0,0.3);
   -webkit-user-select: none;
 }
-.img-overlay img:first-child,
-.img-overlay img:last-child {
+.img-overlay .left-header-img,
+.img-overlay .right-header-img {
+  max-width: 600px;
+  width: 50%;
   z-index: 1;
   top: 205px;
 }
-.img-overlay img:first-child {
-  left: -180px;
+.img-overlay .left-header-img {
+  left: 0;
 }
-.img-overlay img:last-child {
-  left: 380px;
+.img-overlay .right-header-img {
+  right: 0;
+}
+.img-overlay .center-header-img {
+  max-width: 800px;
+  width: 75%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .appstore {
   margin: 0 auto;
