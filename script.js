@@ -1,8 +1,15 @@
 $(document).ready(main)
 
 function main () {
+  initClipgerExplination()
   initMagnificPopup()
   initShowMoreImages()
+}
+
+function initClipgerExplination () {
+  $('h1').on('mouseover mouseout', function () {
+    $('header').toggleClass('show-explination')
+  })
 }
 
 function initMagnificPopup () {

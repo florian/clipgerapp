@@ -24,8 +24,10 @@ header .container {
 }
 header h1 {
   padding: 10px;
+  display: inline-block;
   font-size: 55px;
   font-weight: 500;
+  cursor: default;
 }
 header h1 span {
   font-weight: 500;
@@ -34,6 +36,14 @@ header h2 {
   padding: 5px;
   font-size: 23px;
   font-weight: 500;
+  transition: color 0.5s ease-out;
+}
+header h2 .clip,
+header h2 .ger {
+  color: #fff;
+}
+header.show-explination h2 {
+  color: #9dc0dc;
 }
 .img-overlay {
   position: relative;

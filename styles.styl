@@ -28,8 +28,10 @@ header
 
 	h1
 		padding: 10px
+		display: inline-block
 		font-size: 55px
 		font-weight: 500
+		cursor: default
 
 		span
 			font-weight: 500
@@ -38,6 +40,14 @@ header
 		padding: 5px
 		font-size: 23px
 		font-weight: 500
+		transition: color .5s ease-out
+
+		.clip, .ger
+			color: white
+
+	&.show-explination
+		h2
+			color: #9DC0DC
 
 .img-overlay
 	position: relative
