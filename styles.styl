@@ -9,7 +9,8 @@ light-blue = #D7EBFB
 	-webkit-font-smoothing: antialiased
 
 .container
-	width: 1200px
+	max-width: 1200px
+	width: 100%
 	margin: 0 auto
 	box-sizing: border-box
 
@@ -23,7 +24,6 @@ header
 
 	.container
 		max-width: 800px;
-		width: 100%;
 		padding: 0 15px
 
 	h1
@@ -82,7 +82,6 @@ header
 
 	.container
 		max-width: 490px
-		width: 100%
 
 	.slogan
 		position: relative;
@@ -111,6 +110,8 @@ ul
 
 			.description
 				float: left
+				padding-left: 0
+				padding-right: 50px
 
 			kbd
 				border-color: #545454;
@@ -124,12 +125,18 @@ ul
 		padding: 50px
 
 	img
+		max-width: 504px
+		width: 42%
 		box-shadow: 0 0 50px rgba(0,0,0,.5)
 
 	.description
-		float: right
-		width: 500px
+		float: right;
+		box-sizing: border-box;
+		max-width: 696px;
 		padding-top: 50px;
+		width: 58%;
+		padding-top: 50px
+		padding-left: 50px
 		line-height: 2;
 
 	.long-overview-item
@@ -192,7 +199,7 @@ kbd
 	text-align: center
 
 	.container
-		width: 1460px
+		max-width: 1460px
 
 	h3
 		font-size: 35px;
