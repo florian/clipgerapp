@@ -246,6 +246,12 @@ kbd {
   header {
     padding-top: 0;
   }
+  header h1 {
+    font-size: 45px;
+  }
+  header h2 {
+    font-size: 18px;
+  }
   .img-overlay {
     padding-top: 15px;
   }
