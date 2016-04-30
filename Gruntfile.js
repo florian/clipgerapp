@@ -21,12 +21,27 @@ module.exports = function(grunt) {
         files: {
           'dist/script.js': ['js/magnific-popup.js', 'js/script.js']
         }
-    }
-  },
+      }
+    },
 
-  watch: {
-    files: ['js/*', 'styl/*'],
-    tasks: 'dev'
+    watch: {
+      files: ['js/*', 'styl/*'],
+      tasks: 'dev'
+    },
+
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 7
+        },
+
+        files: [{
+          expand: true,
+          cwd: '.',
+          src: ['img/**/*.png'],
+          dest: 'dist/'
+        }]
+      }
     }
   })
 
@@ -34,8 +49,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin')
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-watch')
+  grunt.loadNpmTasks('grunt-contrib-imagemin')
 
   grunt.registerTask('default', 'dev')
   grunt.registerTask('release', 'default')
   grunt.registerTask('dev', ['stylus', 'cssmin', 'uglify'])
+  grunt.registerTask('img', 'imagemin')
 }
