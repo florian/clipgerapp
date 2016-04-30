@@ -29,16 +29,12 @@ module.exports = function(grunt) {
       tasks: 'dev'
     },
 
-    imagemin: {
-      dist: {
-        options: {
-          optimizationLevel: 7
-        },
-
+    image: {
+      dynamic: {
         files: [{
           expand: true,
           cwd: '.',
-          src: ['img/**/*.png'],
+          src: ['img/**/*.png', 'img/*.svg'],
           dest: 'dist/'
         }]
       }
@@ -49,10 +45,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin')
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-watch')
-  grunt.loadNpmTasks('grunt-contrib-imagemin')
+  grunt.loadNpmTasks('grunt-image')
 
   grunt.registerTask('default', 'dev')
   grunt.registerTask('release', 'default')
   grunt.registerTask('dev', ['stylus', 'cssmin', 'uglify'])
-  grunt.registerTask('img', 'imagemin')
+  grunt.registerTask('img', 'image')
 }
