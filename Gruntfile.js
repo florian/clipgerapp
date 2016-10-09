@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'dist/script.js': ['js/magnific-popup.js', 'js/script.js']
+          'dist/script.js': ['js/magnific-popup.js', 'js/ga.js', 'js/script.js']
         }
       }
     },
