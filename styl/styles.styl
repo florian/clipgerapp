@@ -95,13 +95,29 @@ header
 
 	.slogan
 		position: relative
-		top: -11px
 		margin-right: 20px
 
-	img
+	.get-it
 		width: 250px
-		position: relative
-		top: 9px
+		height: 61px
+		border-radius: 7px
+		font-size: 18px
+		margin: 0 auto
+		background-image: linear-gradient(to top,#a9a9a9,#ececec)
+		outline: 0
+		cursor: pointer
+		border: 1px solid grey
+		color: #272727
+		display: inline-block
+		text-align: center
+		line-height: 63px
+		text-decoration: none
+
+		&:hover
+			border-color: darken(grey, 20%)
+
+		&:active
+			background-image: linear-gradient(to bottom,#bfbbbb,#ececec)
 
 ul
 	list-style: none
